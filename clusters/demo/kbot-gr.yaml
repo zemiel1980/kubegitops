@@ -8,4 +8,4 @@ spec:
   interval: 1m0s
   ref:
     branch: main
-  url: https://github.com/zemiel1980/kbot-src
+  url: https://github.com/zemiel1980/kubegitops
