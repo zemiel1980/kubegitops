@@ -22,7 +22,7 @@ spec:
     push:
       branch: main
     secretRef:
-      name: github-credentials
+      name: flux-git-ssh
   update:
     path: ./clusters/demo
     strategy: Setters
