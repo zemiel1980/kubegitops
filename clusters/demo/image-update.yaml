@@ -7,8 +7,8 @@ spec:
   interval: 1m
   sourceRef:
     kind: GitRepository
-    name: flux-system
-    namespace: flux-system
+    name: kbot
+    namespace: demo
   git:
     checkout:
       ref:
@@ -21,6 +21,9 @@ spec:
         chore(kbot): automated image update to {{range .Changed}}{{.Name}}={{.NewTag}} {{end}}
     push:
       branch: main
+    secretRef:
+      name: github-credentials
   update:
     path: ./clusters/demo
     strategy: Setters
+
