@@ -18,7 +18,7 @@ spec:
         name: fluxbot
         email: flux@local
       messageTemplate: |
-        chore(kbot): automated image update to {{range .Updated.Images}}{{.NewTag}}{{end}}
+        chore(kbot): automated image update to {{range .Changed}}{{.Name}}={{.NewTag}} {{end}}
     push:
       branch: main
   update:
