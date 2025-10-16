@@ -1,4 +1,4 @@
-apiVersion: image.toolkit.fluxcd.io/v1beta2
+apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageUpdateAutomation
 metadata:
   name: kbot
@@ -21,8 +21,6 @@ spec:
         chore(kbot): automated image update to {{range .Changed}}{{.Name}}={{.NewTag}} {{end}}
     push:
       branch: main
-    secretRef:
-      name: flux-git-ssh
   update:
     path: ./clusters/demo
     strategy: Setters
