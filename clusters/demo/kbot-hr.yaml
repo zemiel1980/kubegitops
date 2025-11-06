@@ -15,4 +15,4 @@ spec:
   values:
     image:
       repository: zemiel1980/kbot-src
-      tag: 2.2.13 # {"$imagepolicy": "demo:kbot:tag"}
+      tag: 2.2.14 # {"$imagepolicy": "demo:kbot:tag"}
